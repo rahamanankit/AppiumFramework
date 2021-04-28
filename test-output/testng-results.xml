@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="123528" started-at="2021-04-26T14:05:34 IST" finished-at="2021-04-26T14:07:37 IST">
+    <groups>
+    </groups>
+    <test name="AndroidTests_Ecommerce" duration-ms="33796" started-at="2021-04-26T14:05:34 IST" finished-at="2021-04-26T14:06:08 IST">
+      <class name="MobileAutomation.AppiumFramework.Ecommerce_TC">
+        <test-method status="PASS" signature="VerifyCartTotal()[pri:0, instance:MobileAutomation.AppiumFramework.Ecommerce_TC@37374a5e]" name="VerifyCartTotal" duration-ms="33746" started-at="2021-04-26T14:05:34 IST" finished-at="2021-04-26T14:06:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCartTotal -->
+      </class> <!-- MobileAutomation.AppiumFramework.Ecommerce_TC -->
+    </test> <!-- AndroidTests_Ecommerce -->
+    <test name="AndroidTests_ApiDemos" duration-ms="89701" started-at="2021-04-26T14:06:08 IST" finished-at="2021-04-26T14:07:37 IST">
+      <class name="MobileAutomation.AppiumFramework.ApiDemosTC">
+        <test-method status="PASS" signature="killAllProcesses()[pri:0, instance:MobileAutomation.AppiumFramework.ApiDemosTC@2eda0940]" name="killAllProcesses" is-config="true" duration-ms="3007" started-at="2021-04-26T14:06:08 IST" finished-at="2021-04-26T14:06:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killAllProcesses -->
+        <test-method status="FAIL" signature="WifiSettingsTest()[pri:0, instance:MobileAutomation.AppiumFramework.ApiDemosTC@2eda0940]" name="WifiSettingsTest" duration-ms="33032" started-at="2021-04-26T14:06:11 IST" finished-at="2021-04-26T14:06:44 IST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Can't locate an element by this strategy: By.chained({By.className: android.widget.EditText})]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.className: android.widget.EditText})
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.sendKeys(<generated>)
+at MobileAutomation.AppiumFramework.ApiDemosTC.WifiSettingsTest(ApiDemosTC.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@72758afa (tried for 1 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+... 31 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.className: android.widget.EditText})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-2P87BAU', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: AndroidDriver
+at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WifiSettingsTest -->
+        <test-method status="PASS" signature="WifiSettingsTest(java.lang.String)[pri:0, instance:MobileAutomation.AppiumFramework.ApiDemosTC@2eda0940]" name="WifiSettingsTest" duration-ms="23102" started-at="2021-04-26T14:06:46 IST" data-provider="popupText" finished-at="2021-04-26T14:07:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hello]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WifiSettingsTest -->
+        <test-method status="PASS" signature="WifiSettingsTest(java.lang.String)[pri:0, instance:MobileAutomation.AppiumFramework.ApiDemosTC@2eda0940]" name="WifiSettingsTest" duration-ms="28114" started-at="2021-04-26T14:07:09 IST" data-provider="popupText" finished-at="2021-04-26T14:07:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[@#@SD]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WifiSettingsTest -->
+      </class> <!-- MobileAutomation.AppiumFramework.ApiDemosTC -->
+    </test> <!-- AndroidTests_ApiDemos -->
+  </suite> <!-- Suite -->
+</testng-results>

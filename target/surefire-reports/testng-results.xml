@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="134198" started-at="2021-04-28T13:47:52 IST" finished-at="2021-04-28T13:50:06 IST">
+    <groups>
+    </groups>
+    <test name="AndroidTests_Ecommerce" duration-ms="49269" started-at="2021-04-28T13:47:52 IST" finished-at="2021-04-28T13:48:41 IST">
+      <class name="MobileAutomation.AppiumFramework.Ecommerce_TC">
+        <test-method status="PASS" signature="VerifyCartTotal()[pri:0, instance:MobileAutomation.AppiumFramework.Ecommerce_TC@5bb21b69]" name="VerifyCartTotal" duration-ms="49203" started-at="2021-04-28T13:47:52 IST" finished-at="2021-04-28T13:48:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCartTotal -->
+      </class> <!-- MobileAutomation.AppiumFramework.Ecommerce_TC -->
+    </test> <!-- AndroidTests_Ecommerce -->
+    <test name="AndroidTests_ApiDemos" duration-ms="84817" started-at="2021-04-28T13:48:42 IST" finished-at="2021-04-28T13:50:06 IST">
+      <class name="MobileAutomation.AppiumFramework.ApiDemosTC">
+        <test-method status="PASS" signature="killAllProcesses()[pri:0, instance:MobileAutomation.AppiumFramework.ApiDemosTC@22eeefeb]" name="killAllProcesses" is-config="true" duration-ms="3020" started-at="2021-04-28T13:48:42 IST" finished-at="2021-04-28T13:48:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killAllProcesses -->
+        <test-method status="PASS" signature="WifiSettingsTest()[pri:0, instance:MobileAutomation.AppiumFramework.ApiDemosTC@22eeefeb]" name="WifiSettingsTest" duration-ms="28778" started-at="2021-04-28T13:48:45 IST" finished-at="2021-04-28T13:49:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WifiSettingsTest -->
+        <test-method status="PASS" signature="WifiSettingsTest(java.lang.String)[pri:0, instance:MobileAutomation.AppiumFramework.ApiDemosTC@22eeefeb]" name="WifiSettingsTest" duration-ms="26580" started-at="2021-04-28T13:49:13 IST" data-provider="popupText" finished-at="2021-04-28T13:49:40 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hello]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WifiSettingsTest -->
+        <test-method status="PASS" signature="WifiSettingsTest(java.lang.String)[pri:0, instance:MobileAutomation.AppiumFramework.ApiDemosTC@22eeefeb]" name="WifiSettingsTest" duration-ms="26424" started-at="2021-04-28T13:49:40 IST" data-provider="popupText" finished-at="2021-04-28T13:50:06 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[@#@SD]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WifiSettingsTest -->
+      </class> <!-- MobileAutomation.AppiumFramework.ApiDemosTC -->
+    </test> <!-- AndroidTests_ApiDemos -->
+  </suite> <!-- Suite -->
+</testng-results>
